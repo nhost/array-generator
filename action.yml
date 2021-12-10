@@ -1,0 +1,23 @@
+name: array-generator
+description: "generate an array for the specified input"
+
+inputs:
+  value:
+    description: the value
+    required: true
+  all_values:
+    description: all the values - comma seperated
+    required: true
+  quote_output:
+    description: should the output be quoted
+    required: false
+    default: "false"
+
+
+outputs:
+  array:
+    description: the array
+
+runs:
+  using: node12
+  main: index.js
